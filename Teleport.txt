@@ -1,0 +1,1751 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+wait(.25)
+local Audio = Instance.new("Sound")
+Audio.Volume = 0
+Audio.SoundId = "rbxassetid://269866701" 
+Audio.Name = "music"
+Audio.Parent = game.Workspace
+Audio.Playing = true
+Audio.Looped = true
+local FEG = Instance.new("ScreenGui")
+local Fr1 = Instance.new("Frame")
+local SW = Instance.new("TextButton")
+local R15F = Instance.new("TextButton")
+local R6F = Instance.new("TextButton")
+local SWJ = Instance.new("TextButton")
+local C5 = Instance.new("Frame")
+local WP = Instance.new("TextBox")
+local JP = Instance.new("TextBox")
+local God = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Plr1 = Instance.new("TextBox")
+local TP = Instance.new("TextButton")
+local TPA = Instance.new("TextButton")
+local SP = Instance.new("TextButton")
+local SPR = Instance.new("TextBox")
+local Die = Instance.new("TextButton")
+local RL = Instance.new("TextButton")
+local BH = Instance.new("TextButton")
+local TMP = Instance.new("TextBox")
+local TM = Instance.new("TextButton")
+local CT = Instance.new("TextButton")
+local C6 = Instance.new("Frame")
+local InfJ = Instance.new("TextButton")
+local DIS = Instance.new("TextBox")
+local T = Instance.new("TextButton")
+local X = Instance.new("TextBox")
+local Y = Instance.new("TextBox")
+local Z = Instance.new("TextBox")
+local TPS = Instance.new("TextButton")
+local C6_2 = Instance.new("Frame")
+local FR2 = Instance.new("Frame")
+local C5_2 = Instance.new("Frame")
+local TPY = Instance.new("TextButton")
+local Plr2 = Instance.new("TextBox")
+local DIS2 = Instance.new("TextBox")
+local TPAY = Instance.new("TextButton")
+local GR = Instance.new("TextButton")
+local GRS = Instance.new("TextBox")
+local Inv = Instance.new("TextButton")
+local Val1 = Instance.new("TextBox")
+local InvN = Instance.new("TextBox")
+local Si = Instance.new("TextButton")
+local Bar = Instance.new("Frame")
+local FR = Instance.new("Frame")
+local CRE = Instance.new("TextLabel")
+local T5 = Instance.new("TextButton")
+local T1 = Instance.new("TextButton")
+local T4 = Instance.new("TextButton")
+local T3 = Instance.new("TextButton")
+local T2 = Instance.new("TextButton")
+local T6 = Instance.new("TextButton")
+local TXT = Instance.new("TextLabel")
+local VER = Instance.new("TextLabel")
+local T7 = Instance.new("TextButton")
+local T8 = Instance.new("TextButton")
+local T9 = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local Open2 = Instance.new("TextButton")
+local FR3 = Instance.new("Frame")
+local C5_3 = Instance.new("Frame")
+local Save1 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Save2 = Instance.new("TextButton")
+local Save3 = Instance.new("TextButton")
+local Load1 = Instance.new("TextButton")
+local Load2 = Instance.new("TextButton")
+local Load3 = Instance.new("TextButton")
+local UpY1 = Instance.new("TextButton")
+local UpY2 = Instance.new("TextButton")
+local UpY3 = Instance.new("TextButton")
+local TeleP = Instance.new("TextButton")
+local PartN = Instance.new("TextBox")
+local PosY = Instance.new("TextBox")
+local Open3 = Instance.new("TextButton")
+local Txt = Instance.new("TextButton")
+local Coll = Instance.new("TextButton")
+local Anch = Instance.new("TextButton")
+local Cl = Instance.new("TextButton")
+local MT = Instance.new("TextButton")
+--Turned Off Scripts
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local X1 = 0
+	local X2 = 0
+	local X3 = 0
+	local Y1 = 0
+	local Y2 = 0
+	local Y3 = 0
+	local Z1 = 0
+	local Z2 = 0
+	local Z3 = 0
+local C = false
+local Del = false
+local InfiniteJumpEnabled = false
+game:GetService("UserInputService").JumpRequest:connect(function()
+    if InfiniteJumpEnabled then
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+    end
+end)
+    local Selection = Instance.new("SelectionBox")
+    Selection.Parent = FEG
+    Selection.Name = "INFOS"
+    Selection.Color3 = Color3.new(255/255,255/255,255/255)
+
+	mouse.KeyDown:connect(function(key)
+	    if key == "c" then
+		if C == true then
+		if mouse.Target.CanCollide == false then
+mouse.Target.CanCollide = true
+		else
+			mouse.Target.CanCollide = false
+			end
+end
+
+	end
+	end)
+		mouse.KeyDown:connect(function(key)
+	    if key == "r" then
+		if Del == true then
+mouse.Target:Remove()
+end
+
+	end
+		end)	
+		mouse.KeyDown:connect(function(key)
+	    if key == "p" then
+ if Audio.Volume == 0 then
+Audio.Volume = 10
+else
+Audio.Volume = 0
+end
+
+	end
+		end)
+Open4 = false
+Open5 = false
+Open6 = false
+--Properties:
+FEG.Name = "FEG"
+FEG.Parent = game.CoreGui
+FEG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Fr1.Name = "Fr1"
+Fr1.Parent = FEG
+Fr1.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Fr1.BorderSizePixel = 0
+Fr1.Position = UDim2.new(-0.300000012, 0, 0.331, 0)
+Fr1.Size = UDim2.new(0.22690928, 0, 0.315717667, 0)
+
+SW.Name = "SW"
+SW.Parent = Fr1
+SW.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+SW.BorderColor3 = Color3.new(0, 0.0666667, 1)
+SW.Position = UDim2.new(0.0470405333, 0, 0.00179049745, 0)
+SW.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+SW.Font = Enum.Font.SourceSans
+SW.Text = "Set Speed"
+SW.TextColor3 = Color3.new(1, 1, 1)
+SW.TextScaled = true
+SW.TextSize = 14
+SW.TextWrapped = true
+
+R15F.Name = "R15F"
+R15F.Parent = Fr1
+R15F.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+R15F.BorderColor3 = Color3.new(0, 0.0666667, 1)
+R15F.Position = UDim2.new(0.707493424, 0, 0.726543903, 0)
+R15F.Size = UDim2.new(0.258233875, 0, 0.112596005, 0)
+R15F.Font = Enum.Font.SourceSans
+R15F.Text = "R15 Fly"
+R15F.TextColor3 = Color3.new(1, 1, 1)
+R15F.TextScaled = true
+R15F.TextSize = 14
+R15F.TextWrapped = true
+
+R6F.Name = "R6F"
+R6F.Parent = Fr1
+R6F.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+R6F.BorderColor3 = Color3.new(0, 0.0666667, 1)
+R6F.Position = UDim2.new(0.377266943, 0, 0.72688961, 0)
+R6F.Size = UDim2.new(0.303506732, 0, 0.112596005, 0)
+R6F.Font = Enum.Font.SourceSans
+R6F.Text = "R6 Fly"
+R6F.TextColor3 = Color3.new(1, 1, 1)
+R6F.TextScaled = true
+R6F.TextSize = 14
+R6F.TextWrapped = true
+
+SWJ.Name = "SWJ"
+SWJ.Parent = Fr1
+SWJ.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+SWJ.BorderColor3 = Color3.new(0, 0.0666667, 1)
+SWJ.Position = UDim2.new(0.0470405333, 0, 0.145797074, 0)
+SWJ.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+SWJ.Font = Enum.Font.SourceSans
+SWJ.Text = "Set Jump"
+SWJ.TextColor3 = Color3.new(1, 1, 1)
+SWJ.TextScaled = true
+SWJ.TextSize = 14
+SWJ.TextWrapped = true
+
+C5.Name = "C5"
+C5.Parent = Fr1
+C5.BackgroundColor3 = Color3.new(0.129412, 0, 0.780392)
+C5.BorderSizePixel = 0
+C5.Size = UDim2.new(0.0181898829, 0, 1, 0)
+
+WP.Name = "WP"
+WP.Parent = Fr1
+WP.BackgroundColor3 = Color3.new(0, 0, 0)
+WP.BorderColor3 = Color3.new(0, 0.615686, 1)
+WP.Position = UDim2.new(0.375499398, 0, 0, 0)
+WP.Size = UDim2.new(0.177961364, 0, 0.112999998, 0)
+WP.Font = Enum.Font.SourceSans
+WP.PlaceholderText = "16"
+WP.Text = ""
+WP.TextColor3 = Color3.new(1, 1, 1)
+WP.TextScaled = true
+WP.TextSize = 14
+WP.TextWrapped = true
+
+JP.Name = "JP"
+JP.Parent = Fr1
+JP.BackgroundColor3 = Color3.new(0, 0, 0)
+JP.BorderColor3 = Color3.new(0, 0.615686, 1)
+JP.Position = UDim2.new(0.375499338, 0, 0.145695359, 0)
+JP.Size = UDim2.new(0.177961484, 0, 0.112999998, 0)
+JP.Font = Enum.Font.SourceSans
+JP.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+JP.PlaceholderText = "50"
+JP.Text = ""
+JP.TextColor3 = Color3.new(1, 1, 1)
+JP.TextScaled = true
+JP.TextSize = 14
+JP.TextWrapped = true
+
+God.Name = "God"
+God.Parent = Fr1
+God.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+God.BorderColor3 = Color3.new(0, 0.0666667, 1)
+God.Position = UDim2.new(0.595642447, 0, 0.00179050118, 0)
+God.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+God.Font = Enum.Font.SourceSans
+God.Text = "God"
+God.TextColor3 = Color3.new(1, 1, 1)
+God.TextScaled = true
+God.TextSize = 14
+God.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Fr1
+Noclip.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Noclip.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Noclip.Position = UDim2.new(0.595642447, 0, 0.143070847, 0)
+Noclip.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextScaled = true
+Noclip.TextSize = 14
+Noclip.TextWrapped = true
+
+Plr1.Name = "Plr1"
+Plr1.Parent = Fr1
+Plr1.BackgroundColor3 = Color3.new(0, 0, 0)
+Plr1.BorderColor3 = Color3.new(0, 0.615686, 1)
+Plr1.Position = UDim2.new(0.375499368, 0, 0.291390717, 0)
+Plr1.Size = UDim2.new(0.53163904, 0, 0.112999998, 0)
+Plr1.Font = Enum.Font.SourceSans
+Plr1.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+Plr1.PlaceholderText = "Player name"
+Plr1.Text = ""
+Plr1.TextColor3 = Color3.new(1, 1, 1)
+Plr1.TextScaled = true
+Plr1.TextSize = 14
+Plr1.TextWrapped = true
+Plr1.TextXAlignment = Enum.TextXAlignment.Left
+
+TP.Name = "TP"
+TP.Parent = Fr1
+TP.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TP.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TP.Position = UDim2.new(0.0443774164, 0, 0.291492432, 0)
+TP.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+TP.Font = Enum.Font.SourceSans
+TP.Text = "Teleport"
+TP.TextColor3 = Color3.new(1, 1, 1)
+TP.TextScaled = true
+TP.TextSize = 14
+TP.TextWrapped = true
+
+TPA.Name = "TPA"
+TPA.Parent = Fr1
+TPA.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TPA.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TPA.Position = UDim2.new(0.0470405221, 0, 0.587298155, 0)
+TPA.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+TPA.Font = Enum.Font.SourceSans
+TPA.Text = "TP All"
+TPA.TextColor3 = Color3.new(1, 1, 1)
+TPA.TextScaled = true
+TPA.TextSize = 14
+TPA.TextWrapped = true
+
+SP.Name = "SP"
+SP.Parent = Fr1
+SP.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+SP.BorderColor3 = Color3.new(0, 0.0666667, 1)
+SP.Position = UDim2.new(0.374603808, 0, 0.441602826, 0)
+SP.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+SP.Font = Enum.Font.SourceSans
+SP.Text = "Spin"
+SP.TextColor3 = Color3.new(1, 1, 1)
+SP.TextScaled = true
+SP.TextSize = 14
+SP.TextWrapped = true
+
+SPR.Name = "SPR"
+SPR.Parent = Fr1
+SPR.BackgroundColor3 = Color3.new(0, 0, 0)
+SPR.BorderColor3 = Color3.new(0, 0.615686, 1)
+SPR.Position = UDim2.new(0.700399518, 0, 0.437086105, 0)
+SPR.Size = UDim2.new(0.26275292, 0, 0.113000005, 0)
+SPR.Font = Enum.Font.SourceSans
+SPR.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+SPR.PlaceholderText = "V/S"
+SPR.Text = ""
+SPR.TextColor3 = Color3.new(1, 1, 1)
+SPR.TextScaled = true
+SPR.TextSize = 14
+SPR.TextWrapped = true
+
+Die.Name = "Die"
+Die.Parent = Fr1
+Die.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Die.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Die.Position = UDim2.new(0.377266884, 0, 0.59171325, 0)
+Die.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+Die.Font = Enum.Font.SourceSans
+Die.Text = "Die"
+Die.TextColor3 = Color3.new(1, 1, 1)
+Die.TextScaled = true
+Die.TextSize = 14
+Die.TextWrapped = true
+
+RL.Name = "RL"
+RL.Parent = Fr1
+RL.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+RL.BorderColor3 = Color3.new(0, 0.0666667, 1)
+RL.Position = UDim2.new(0.963152409, 0, 0.141382158, 0)
+RL.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+RL.Font = Enum.Font.SourceSans
+RL.Text = "R[Delete]"
+RL.TextColor3 = Color3.new(1, 1, 1)
+RL.TextScaled = true
+RL.TextSize = 14
+RL.TextWrapped = true
+
+BH.Name = "BH"
+BH.Parent = Fr1
+BH.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+BH.BorderColor3 = Color3.new(0, 0.0666667, 1)
+BH.Position = UDim2.new(0.963152409, 0, 0.000101859994, 0)
+BH.Size = UDim2.new(0.306169838, 0, 0.112596005, 0)
+BH.Font = Enum.Font.SourceSans
+BH.Text = "C[Colide]"
+BH.TextColor3 = Color3.new(1, 1, 1)
+BH.TextScaled = true
+BH.TextSize = 14
+BH.TextWrapped = true
+
+TMP.Name = "TMP"
+TMP.Parent = Fr1
+TMP.BackgroundColor3 = Color3.new(0, 0, 0)
+TMP.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TMP.Position = UDim2.new(0.479360908, 0, 0.883002222, 0)
+TMP.Size = UDim2.new(0.379841506, 0, 0.113000005, 0)
+TMP.Font = Enum.Font.SourceSans
+TMP.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+TMP.PlaceholderText = "Pos*N"
+TMP.Text = ""
+TMP.TextColor3 = Color3.new(1, 1, 1)
+TMP.TextScaled = true
+TMP.TextSize = 14
+TMP.TextWrapped = true
+
+TM.Name = "TM"
+TM.Parent = Fr1
+TM.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TM.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TM.Position = UDim2.new(0.0470405072, 0, 0.881415129, 0)
+TM.Size = UDim2.new(0.399378926, 0, 0.112595998, 0)
+TM.Font = Enum.Font.SourceSans
+TM.Text = "TP Move"
+TM.TextColor3 = Color3.new(1, 1, 1)
+TM.TextScaled = true
+TM.TextSize = 14
+TM.TextWrapped = true
+
+CT.Name = "CT"
+CT.Parent = Fr1
+CT.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+CT.BorderColor3 = Color3.new(0, 0.0666667, 1)
+CT.Position = UDim2.new(0.0443774574, 0, 0.72688961, 0)
+CT.Size = UDim2.new(0.303506732, 0, 0.112596005, 0)
+CT.Font = Enum.Font.SourceSans
+CT.Text = "Ctrl+Q Tele"
+CT.TextColor3 = Color3.new(1, 1, 1)
+CT.TextScaled = true
+CT.TextSize = 14
+CT.TextWrapped = true
+
+C6.Name = "C6"
+C6.Parent = Fr1
+C6.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+C6.BorderSizePixel = 0
+C6.Position = UDim2.new(1.00000012, 0, 0.00179052597, 0)
+C6.Size = UDim2.new(0.287963897, 0, 0.998209417, 0)
+C6.ZIndex = 0
+
+InfJ.Name = "InfJ"
+InfJ.Parent = Fr1
+InfJ.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+InfJ.BorderColor3 = Color3.new(0, 0.0666667, 1)
+InfJ.Position = UDim2.new(0.699504077, 0, 0.588986814, 0)
+InfJ.Size = UDim2.new(0.276527852, 0, 0.112596005, 0)
+InfJ.Font = Enum.Font.SourceSans
+InfJ.Text = "Inf Jump"
+InfJ.TextColor3 = Color3.new(1, 1, 1)
+InfJ.TextScaled = true
+InfJ.TextSize = 14
+InfJ.TextWrapped = true
+
+DIS.Name = "DIS"
+DIS.Parent = Fr1
+DIS.BackgroundColor3 = Color3.new(0, 0, 0)
+DIS.BorderColor3 = Color3.new(0, 0.615686, 1)
+DIS.Position = UDim2.new(0.924101293, 0, 0.291390717, 0)
+DIS.Size = UDim2.new(0.347884029, 0, 0.112999998, 0)
+DIS.Font = Enum.Font.SourceSans
+DIS.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+DIS.PlaceholderText = "Distance"
+DIS.Text = ""
+DIS.TextColor3 = Color3.new(1, 1, 1)
+DIS.TextScaled = true
+DIS.TextSize = 14
+DIS.TextWrapped = true
+DIS.TextXAlignment = Enum.TextXAlignment.Left
+
+T.Name = "T"
+T.Parent = Fr1
+T.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T.BorderColor3 = Color3.new(0, 0.0666667, 1)
+T.Position = UDim2.new(1.00798929, 0, 0.443291605, 0)
+T.Size = UDim2.new(0.263996452, 0, 0.112596005, 0)
+T.Font = Enum.Font.SourceSans
+T.Text = "Tele"
+T.TextColor3 = Color3.new(1, 1, 1)
+T.TextScaled = true
+T.TextSize = 14
+T.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Fr1
+X.BackgroundColor3 = Color3.new(0, 0, 0)
+X.BorderColor3 = Color3.new(0, 0.615686, 1)
+X.Position = UDim2.new(1.03062606, 0, 0.613686562, 0)
+X.Size = UDim2.new(0.220054448, 0, 0.113000005, 0)
+X.Font = Enum.Font.SourceSans
+X.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+X.PlaceholderText = "X"
+X.Text = ""
+X.TextColor3 = Color3.new(1, 1, 1)
+X.TextScaled = true
+X.TextSize = 14
+X.TextWrapped = true
+
+Y.Name = "Y"
+Y.Parent = Fr1
+Y.BackgroundColor3 = Color3.new(0, 0, 0)
+Y.BorderColor3 = Color3.new(0, 0.615686, 1)
+Y.Position = UDim2.new(1.03062606, 0, 0.724061847, 0)
+Y.Size = UDim2.new(0.220054448, 0, 0.113000005, 0)
+Y.Font = Enum.Font.SourceSans
+Y.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+Y.PlaceholderText = "Y"
+Y.Text = ""
+Y.TextColor3 = Color3.new(1, 1, 1)
+Y.TextScaled = true
+Y.TextSize = 14
+Y.TextWrapped = true
+
+Z.Name = "Z"
+Z.Parent = Fr1
+Z.BackgroundColor3 = Color3.new(0, 0, 0)
+Z.BorderColor3 = Color3.new(0, 0.615686, 1)
+Z.Position = UDim2.new(1.03062606, 0, 0.843267143, 0)
+Z.Size = UDim2.new(0.220054448, 0, 0.113000005, 0)
+Z.Font = Enum.Font.SourceSans
+Z.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+Z.PlaceholderText = "Z"
+Z.Text = ""
+Z.TextColor3 = Color3.new(1, 1, 1)
+Z.TextScaled = true
+Z.TextSize = 14
+Z.TextWrapped = true
+
+TPS.Name = "TPS"
+TPS.Parent = Fr1
+TPS.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TPS.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TPS.Position = UDim2.new(0.0470405817, 0, 0.443291634, 0)
+TPS.Size = UDim2.new(0.306169868, 0, 0.112596005, 0)
+TPS.Font = Enum.Font.SourceSans
+TPS.Text = "Spam TP"
+TPS.TextColor3 = Color3.new(1, 1, 1)
+TPS.TextScaled = true
+TPS.TextSize = 14
+TPS.TextWrapped = true
+
+C6_2.Name = "C6"
+C6_2.Parent = Fr1
+C6_2.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+C6_2.BorderSizePixel = 0
+C6_2.Position = UDim2.new(1.00000012, 0, -0.042359747, 0)
+C6_2.Size = UDim2.new(0.613055825, 0, 0.296337903, 0)
+C6_2.Visible = false
+C6_2.ZIndex = 0
+
+FR2.Name = "FR2"
+FR2.Parent = FEG
+FR2.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+FR2.BorderSizePixel = 0
+FR2.Position = UDim2.new(-0.300000012, 0, 0.68900001, 0)
+FR2.Size = UDim2.new(0.27861169, 0, 0.276306808, 0)
+FR2.ZIndex = 0
+
+C5_2.Name = "C5"
+C5_2.Parent = FR2
+C5_2.BackgroundColor3 = Color3.new(0.129412, 0, 0.780392)
+C5_2.BorderSizePixel = 0
+C5_2.Position = UDim2.new(-1.48164816e-07, 0, 1.34826422e-07, 0)
+C5_2.Size = UDim2.new(0.0164967831, 0, 1.00000119, 0)
+
+TPY.Name = "TPY"
+TPY.Parent = FR2
+TPY.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TPY.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TPY.Position = UDim2.new(0.0310617909, 0, 0.0675467402, 0)
+TPY.Size = UDim2.new(0.235683411, 0, 0.112595998, 0)
+TPY.Font = Enum.Font.SourceSans
+TPY.Text = "TP to you"
+TPY.TextColor3 = Color3.new(1, 1, 1)
+TPY.TextScaled = true
+TPY.TextSize = 14
+TPY.TextWrapped = true
+
+Plr2.Name = "Plr2"
+Plr2.Parent = FR2
+Plr2.BackgroundColor3 = Color3.new(0, 0, 0)
+Plr2.BorderColor3 = Color3.new(0, 0.615686, 1)
+Plr2.Position = UDim2.new(0.284599453, 0, 0.0701518133, 0)
+Plr2.Size = UDim2.new(0.402394831, 0, 0.112999998, 0)
+Plr2.Font = Enum.Font.SourceSans
+Plr2.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+Plr2.PlaceholderText = "Player name"
+Plr2.Text = ""
+Plr2.TextColor3 = Color3.new(1, 1, 1)
+Plr2.TextScaled = true
+Plr2.TextSize = 14
+Plr2.TextWrapped = true
+Plr2.TextXAlignment = Enum.TextXAlignment.Left
+
+DIS2.Name = "DIS2"
+DIS2.Parent = FR2
+DIS2.BackgroundColor3 = Color3.new(0, 0, 0)
+DIS2.BorderColor3 = Color3.new(0, 0.615686, 1)
+DIS2.Position = UDim2.new(0.707948625, 0, 0.0701518133, 0)
+DIS2.Size = UDim2.new(0.26683256, 0, 0.112999998, 0)
+DIS2.Font = Enum.Font.SourceSans
+DIS2.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+DIS2.PlaceholderText = "Distance"
+DIS2.Text = ""
+DIS2.TextColor3 = Color3.new(1, 1, 1)
+DIS2.TextScaled = true
+DIS2.TextSize = 14
+DIS2.TextWrapped = true
+DIS2.TextXAlignment = Enum.TextXAlignment.Left
+
+TPAY.Name = "TPAY"
+TPAY.Parent = FR2
+TPAY.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TPAY.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TPAY.Position = UDim2.new(0.0310617909, 0, 0.217989221, 0)
+TPAY.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+TPAY.Font = Enum.Font.SourceSans
+TPAY.Text = "TP All to you"
+TPAY.TextColor3 = Color3.new(1, 1, 1)
+TPAY.TextScaled = true
+TPAY.TextSize = 14
+TPAY.TextWrapped = true
+
+GR.Name = "GR"
+GR.Parent = FR2
+GR.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+GR.BorderColor3 = Color3.new(0, 0.0666667, 1)
+GR.Position = UDim2.new(0.0310618691, 0, 0.806484818, 0)
+GR.Size = UDim2.new(0.208056122, 0, 0.112595998, 0)
+GR.Font = Enum.Font.SourceSans
+GR.Text = "Set G"
+GR.TextColor3 = Color3.new(1, 1, 1)
+GR.TextScaled = true
+GR.TextSize = 14
+GR.TextWrapped = true
+
+GRS.Name = "GRS"
+GRS.Parent = FR2
+GRS.BackgroundColor3 = Color3.new(0, 0, 0)
+GRS.BorderColor3 = Color3.new(0, 0.615686, 1)
+GRS.Position = UDim2.new(0.266581476, 0, 0.804665089, 0)
+GRS.Size = UDim2.new(0.163012579, 0, 0.112999998, 0)
+GRS.Font = Enum.Font.SourceSans
+GRS.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+GRS.PlaceholderText = "192"
+GRS.Text = ""
+GRS.TextColor3 = Color3.new(1, 1, 1)
+GRS.TextScaled = true
+GRS.TextSize = 14
+GRS.TextWrapped = true
+
+Inv.Name = "Inv"
+Inv.Parent = FR2
+Inv.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Inv.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Inv.Position = UDim2.new(0.0310617909, 0, 0.514449418, 0)
+Inv.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Inv.Font = Enum.Font.SourceSans
+Inv.Text = "Tele[Up]"
+Inv.TextColor3 = Color3.new(1, 1, 1)
+Inv.TextScaled = true
+Inv.TextSize = 14
+Inv.TextWrapped = true
+
+Val1.Name = "Val1"
+Val1.Parent = FR2
+Val1.BackgroundColor3 = Color3.new(0, 0, 0)
+Val1.BorderColor3 = Color3.new(0, 0.615686, 1)
+Val1.Position = UDim2.new(0.350162268, 0, 0.512629688, 0)
+Val1.Size = UDim2.new(0.248629317, 0, 0.112999998, 0)
+Val1.Font = Enum.Font.SourceSans
+Val1.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+Val1.PlaceholderText = "Distance"
+Val1.Text = ""
+Val1.TextColor3 = Color3.new(1, 1, 1)
+Val1.TextScaled = true
+Val1.TextSize = 14
+Val1.TextWrapped = true
+Val1.TextXAlignment = Enum.TextXAlignment.Left
+
+InvN.Name = "InvN"
+InvN.Parent = FR2
+InvN.BackgroundColor3 = Color3.new(0, 0, 0)
+InvN.BorderColor3 = Color3.new(0, 0.615686, 1)
+InvN.Position = UDim2.new(0.350162089, 0, 0.362187266, 0)
+InvN.Size = UDim2.new(0.251203269, 0, 0.112999998, 0)
+InvN.Font = Enum.Font.SourceSans
+InvN.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+InvN.PlaceholderText = "Up"
+InvN.Text = ""
+InvN.TextColor3 = Color3.new(1, 1, 1)
+InvN.TextScaled = true
+InvN.TextSize = 14
+InvN.TextWrapped = true
+InvN.TextXAlignment = Enum.TextXAlignment.Left
+
+Si.Name = "Si"
+Si.Parent = FR2
+Si.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Si.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Si.Position = UDim2.new(0.0310617909, 0, 0.359582156, 0)
+Si.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Si.Font = Enum.Font.SourceSans
+Si.Text = "Tele[Front]"
+Si.TextColor3 = Color3.new(1, 1, 1)
+Si.TextScaled = true
+Si.TextSize = 14
+Si.TextWrapped = true
+
+Bar.Name = "Bar"
+Bar.Parent = FEG
+Bar.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(0, 0, 0.967791438, 0)
+Bar.Size = UDim2.new(0.999999881, 0, 0.0315418467, 0)
+
+FR.Name = "FR"
+FR.Parent = Bar
+FR.BackgroundColor3 = Color3.new(0.780392, 0.780392, 0.780392)
+FR.BorderSizePixel = 0
+FR.Size = UDim2.new(0.0064744004, 0, 1, 0)
+
+CRE.Name = "CRE"
+CRE.Parent = Bar
+CRE.BackgroundColor3 = Color3.new(0.129412, 0, 0.780392)
+CRE.BackgroundTransparency = 1
+CRE.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+CRE.Position = UDim2.new(0.010214828, 0, -0.0240486749, 0)
+CRE.Size = UDim2.new(0.101919241, 0, 0.932660162, 1)
+CRE.Font = Enum.Font.Cartoon
+CRE.Text = "By Andreas21"
+CRE.TextColor3 = Color3.new(0.819608, 0.819608, 0.819608)
+CRE.TextScaled = true
+CRE.TextSize = 14
+CRE.TextWrapped = true
+
+T5.Name = "T5"
+T5.Parent = Bar
+T5.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T5.BorderColor3 = Color3.new(1, 1, 1)
+T5.Position = UDim2.new(0.343917876, 0, 0.0268829949, 0)
+T5.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T5.Font = Enum.Font.SourceSans
+T5.Text = "B"
+T5.TextColor3 = Color3.new(0.231373, 0, 1)
+T5.TextScaled = true
+T5.TextSize = 14
+T5.TextWrapped = true
+
+T1.Name = "T1"
+T1.Parent = Bar
+T1.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T1.BorderColor3 = Color3.new(1, 1, 1)
+T1.Position = UDim2.new(0.23509343, 0, 0.0268829949, 0)
+T1.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T1.Font = Enum.Font.SourceSans
+T1.Text = "R"
+T1.TextColor3 = Color3.new(1, 0, 0)
+T1.TextScaled = true
+T1.TextSize = 14
+T1.TextWrapped = true
+
+T4.Name = "T4"
+T4.Parent = Bar
+T4.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T4.BorderColor3 = Color3.new(1, 1, 1)
+T4.Position = UDim2.new(0.316961944, 0, 0.0268829949, 0)
+T4.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T4.Font = Enum.Font.SourceSans
+T4.Text = "G"
+T4.TextColor3 = Color3.new(0.0627451, 0.772549, 0.0117647)
+T4.TextScaled = true
+T4.TextSize = 14
+T4.TextWrapped = true
+
+T3.Name = "T3"
+T3.Parent = Bar
+T3.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T3.BorderColor3 = Color3.new(1, 1, 1)
+T3.Position = UDim2.new(0.289602011, 0, 0.0268829949, 0)
+T3.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T3.Font = Enum.Font.SourceSans
+T3.Text = "Y"
+T3.TextColor3 = Color3.new(0.772549, 0.643137, 0)
+T3.TextScaled = true
+T3.TextSize = 14
+T3.TextWrapped = true
+
+T2.Name = "T2"
+T2.Parent = Bar
+T2.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T2.BorderColor3 = Color3.new(1, 1, 1)
+T2.Position = UDim2.new(0.262646109, 0, 0.0268829949, 0)
+T2.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T2.Font = Enum.Font.SourceSans
+T2.Text = "O"
+T2.TextColor3 = Color3.new(0.937255, 0.470588, 0)
+T2.TextScaled = true
+T2.TextSize = 14
+T2.TextWrapped = true
+
+T6.Name = "T6"
+T6.Parent = Bar
+T6.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T6.BorderColor3 = Color3.new(1, 1, 1)
+T6.Position = UDim2.new(0.370938033, 0, 0.0268829949, 0)
+T6.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T6.Font = Enum.Font.SourceSans
+T6.Text = "P"
+T6.TextColor3 = Color3.new(0.623529, 0, 0.937255)
+T6.TextScaled = true
+T6.TextSize = 14
+T6.TextWrapped = true
+
+TXT.Name = "TXT"
+TXT.Parent = Bar
+TXT.BackgroundColor3 = Color3.new(0.129412, 0, 0.780392)
+TXT.BackgroundTransparency = 1
+TXT.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+TXT.Position = UDim2.new(0.165832937, 0, 0.0261439942, 0)
+TXT.Size = UDim2.new(0.0679313913, 0, 0.932660162, 1)
+TXT.Font = Enum.Font.Cartoon
+TXT.Text = "Theme"
+TXT.TextColor3 = Color3.new(0.819608, 0.819608, 0.819608)
+TXT.TextScaled = true
+TXT.TextSize = 14
+TXT.TextWrapped = true
+
+VER.Name = "VER"
+VER.Parent = Bar
+VER.BackgroundColor3 = Color3.new(0.129412, 0, 0.780392)
+VER.BackgroundTransparency = 1
+VER.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+VER.Position = UDim2.new(0.881987631, 0, 0.0245776009, 0)
+VER.Size = UDim2.new(0.10559009, 0, 0.932660162, 1)
+VER.Font = Enum.Font.Cartoon
+VER.Text = "V0.1"
+VER.TextColor3 = Color3.new(0.819608, 0.819608, 0.819608)
+VER.TextScaled = true
+VER.TextSize = 14
+VER.TextWrapped = true
+
+T7.Name = "T7"
+T7.Parent = Bar
+T7.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T7.BorderColor3 = Color3.new(1, 1, 1)
+T7.Position = UDim2.new(0.397716284, 0, 0.0268829949, 0)
+T7.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T7.Font = Enum.Font.SourceSans
+T7.Text = "P"
+T7.TextColor3 = Color3.new(0.937255, 0.00784314, 0.862745)
+T7.TextScaled = true
+T7.TextSize = 14
+T7.TextWrapped = true
+
+T8.Name = "T8"
+T8.Parent = Bar
+T8.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T8.BorderColor3 = Color3.new(1, 1, 1)
+T8.Position = UDim2.new(0.424494535, 0, 0.0268830061, 0)
+T8.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T8.Font = Enum.Font.SourceSans
+T8.Text = "W"
+T8.TextColor3 = Color3.new(0.937255, 0.937255, 0.937255)
+T8.TextScaled = true
+T8.TextSize = 14
+T8.TextWrapped = true
+
+T9.Name = "T9"
+T9.Parent = Bar
+T9.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+T9.BorderColor3 = Color3.new(1, 1, 1)
+T9.Position = UDim2.new(0.451272786, 0, 0.0268830061, 0)
+T9.Size = UDim2.new(0.0273716655, 0, 0.953885674, 0)
+T9.Font = Enum.Font.SourceSans
+T9.Text = "B"
+T9.TextColor3 = Color3.new(0.352941, 0.352941, 0.352941)
+T9.TextScaled = true
+T9.TextSize = 14
+T9.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = FEG
+Open.BackgroundColor3 = Color3.new(0, 0, 0)
+Open.BorderColor3 = Color3.new(0.635294, 0.635294, 0.635294)
+Open.BorderSizePixel = 2
+Open.Position = UDim2.new(0.325707912, 0, 0.928013086, 0)
+Open.Size = UDim2.new(0.0625599101, 0, 0.0388915539, 0)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "You"
+Open.TextColor3 = Color3.new(0.941177, 0.941177, 0.941177)
+Open.TextScaled = true
+Open.TextSize = 14
+Open.TextWrapped = true
+
+Open2.Name = "Open2"
+Open2.Parent = FEG
+Open2.BackgroundColor3 = Color3.new(0, 0, 0)
+Open2.BorderColor3 = Color3.new(0.635294, 0.635294, 0.635294)
+Open2.BorderSizePixel = 2
+Open2.Position = UDim2.new(0.451230884, 0, 0.924945593, 0)
+Open2.Size = UDim2.new(0.0633967221, 0, 0.0388915539, 0)
+Open2.Font = Enum.Font.SourceSans
+Open2.Text = "More"
+Open2.TextColor3 = Color3.new(0.941177, 0.941177, 0.941177)
+Open2.TextScaled = true
+Open2.TextSize = 14
+Open2.TextWrapped = true
+
+FR3.Name = "FR3"
+FR3.Parent = FEG
+FR3.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+FR3.BorderSizePixel = 0
+FR3.Position = UDim2.new(1, 0, 0.68900001, 0)
+FR3.Size = UDim2.new(0.27861169, 0, 0.276306808, 0)
+FR3.ZIndex = 0
+
+C5_3.Name = "C5"
+C5_3.Parent = FR3
+C5_3.BackgroundColor3 = Color3.new(0.129412, 0, 0.780392)
+C5_3.BorderSizePixel = 0
+C5_3.Position = UDim2.new(0.982155919, 0, 1.34826422e-07, 0)
+C5_3.Size = UDim2.new(0.0164967831, 0, 1.00000119, 0)
+
+Save1.Name = "Save1"
+Save1.Parent = FR3
+Save1.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Save1.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Save1.Position = UDim2.new(0.0310617909, 0, 0.753136694, 0)
+Save1.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Save1.Font = Enum.Font.SourceSans
+Save1.Text = "Save"
+Save1.TextColor3 = Color3.new(1, 1, 1)
+Save1.TextScaled = true
+Save1.TextSize = 14
+Save1.TextWrapped = true
+
+TextLabel.Parent = FR3
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.0120141413, 0, 0.869277656, 0)
+TextLabel.Size = UDim2.new(0.330000013, 0, 0.12476854, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "X0,Z0,Y0"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = FR3
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.339399517, 0, 0.874828517, 0)
+TextLabel_2.Size = UDim2.new(0.330000013, 0, 0.12476854, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "X0,Z0,Y0"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = FR3
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.666784883, 0, 0.88593024, 0)
+TextLabel_3.Size = UDim2.new(0.330000013, 0, 0.12476854, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "X0,Z0,Y0"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+
+Save2.Name = "Save2"
+Save2.Parent = FR3
+Save2.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Save2.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Save2.Position = UDim2.new(0.352440059, 0, 0.753136694, 0)
+Save2.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Save2.Font = Enum.Font.SourceSans
+Save2.Text = "Save"
+Save2.TextColor3 = Color3.new(1, 1, 1)
+Save2.TextScaled = true
+Save2.TextSize = 14
+Save2.TextWrapped = true
+
+Save3.Name = "Save3"
+Save3.Parent = FR3
+Save3.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Save3.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Save3.Position = UDim2.new(0.682828903, 0, 0.753136694, 0)
+Save3.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Save3.Font = Enum.Font.SourceSans
+Save3.Text = "Save"
+Save3.TextColor3 = Color3.new(1, 1, 1)
+Save3.TextScaled = true
+Save3.TextSize = 14
+Save3.TextWrapped = true
+
+Load1.Name = "Load1"
+Load1.Parent = FR3
+Load1.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Load1.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Load1.Position = UDim2.new(0.0280582551, 0, 0.625466764, 0)
+Load1.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Load1.Font = Enum.Font.SourceSans
+Load1.Text = "Load"
+Load1.TextColor3 = Color3.new(1, 1, 1)
+Load1.TextScaled = true
+Load1.TextSize = 14
+Load1.TextWrapped = true
+
+Load2.Name = "Load2"
+Load2.Parent = FR3
+Load2.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Load2.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Load2.Position = UDim2.new(0.352440089, 0, 0.625466764, 0)
+Load2.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Load2.Font = Enum.Font.SourceSans
+Load2.Text = "Load"
+Load2.TextColor3 = Color3.new(1, 1, 1)
+Load2.TextScaled = true
+Load2.TextSize = 14
+Load2.TextWrapped = true
+
+Load3.Name = "Load3"
+Load3.Parent = FR3
+Load3.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Load3.BorderColor3 = Color3.new(0, 0.0666667, 1)
+Load3.Position = UDim2.new(0.682828963, 0, 0.625466764, 0)
+Load3.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+Load3.Font = Enum.Font.SourceSans
+Load3.Text = "Load"
+Load3.TextColor3 = Color3.new(1, 1, 1)
+Load3.TextScaled = true
+Load3.TextSize = 14
+Load3.TextWrapped = true
+
+UpY1.Name = "UpY1"
+UpY1.Parent = FR3
+UpY1.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+UpY1.BorderColor3 = Color3.new(0, 0.0666667, 1)
+UpY1.Position = UDim2.new(0.0280582532, 0, 0.0648292303, 0)
+UpY1.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+UpY1.Font = Enum.Font.SourceSans
+UpY1.Text = "+Y150"
+UpY1.TextColor3 = Color3.new(1, 1, 1)
+UpY1.TextScaled = true
+UpY1.TextSize = 14
+UpY1.TextWrapped = true
+
+UpY2.Name = "UpY2"
+UpY2.Parent = FR3
+UpY2.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+UpY2.BorderColor3 = Color3.new(0, 0.0666667, 1)
+UpY2.Position = UDim2.new(0.352440089, 0, 0.0648292303, 0)
+UpY2.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+UpY2.Font = Enum.Font.SourceSans
+UpY2.Text = "+Y1000"
+UpY2.TextColor3 = Color3.new(1, 1, 1)
+UpY2.TextScaled = true
+UpY2.TextSize = 14
+UpY2.TextWrapped = true
+
+UpY3.Name = "UpY3"
+UpY3.Parent = FR3
+UpY3.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+UpY3.BorderColor3 = Color3.new(0, 0.0666667, 1)
+UpY3.Position = UDim2.new(0.682828963, 0, 0.0648292303, 0)
+UpY3.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+UpY3.Font = Enum.Font.SourceSans
+UpY3.Text = "+Y5000"
+UpY3.TextColor3 = Color3.new(1, 1, 1)
+UpY3.TextScaled = true
+UpY3.TextSize = 14
+UpY3.TextWrapped = true
+
+TeleP.Name = "TeleP"
+TeleP.Parent = FR3
+TeleP.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TeleP.BorderColor3 = Color3.new(0, 0.0666667, 1)
+TeleP.Position = UDim2.new(0.0280582309, 0, 0.286863923, 0)
+TeleP.Size = UDim2.new(0.292826176, 0, 0.112595998, 0)
+TeleP.Font = Enum.Font.SourceSans
+TeleP.Text = "Tele to a part"
+TeleP.TextColor3 = Color3.new(1, 1, 1)
+TeleP.TextScaled = true
+TeleP.TextSize = 14
+TeleP.TextWrapped = true
+
+PartN.Name = "PartN"
+PartN.Parent = FR3
+PartN.BackgroundColor3 = Color3.new(0, 0, 0)
+PartN.BorderColor3 = Color3.new(0, 0.615686, 1)
+PartN.Position = UDim2.new(0.35016191, 0, 0.284475148, 0)
+PartN.Size = UDim2.new(0.316622883, 0, 0.112999998, 0)
+PartN.Font = Enum.Font.SourceSans
+PartN.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+PartN.PlaceholderText = "Part Name"
+PartN.Text = ""
+PartN.TextColor3 = Color3.new(1, 1, 1)
+PartN.TextScaled = true
+PartN.TextSize = 14
+PartN.TextWrapped = true
+PartN.TextXAlignment = Enum.TextXAlignment.Left
+
+PosY.Name = "PosY"
+PosY.Parent = FR3
+PosY.BackgroundColor3 = Color3.new(0, 0, 0)
+PosY.BorderColor3 = Color3.new(0, 0.615686, 1)
+PosY.Position = UDim2.new(0.69857204, 0, 0.284475148, 0)
+PosY.Size = UDim2.new(0.25655219, 0, 0.112999998, 0)
+PosY.Font = Enum.Font.SourceSans
+PosY.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+PosY.PlaceholderText = "+Pos Y"
+PosY.Text = ""
+PosY.TextColor3 = Color3.new(1, 1, 1)
+PosY.TextScaled = true
+PosY.TextSize = 14
+PosY.TextWrapped = true
+PosY.TextXAlignment = Enum.TextXAlignment.Left
+
+Open3.Name = "Open3"
+Open3.Parent = FEG
+Open3.BackgroundColor3 = Color3.new(0, 0, 0)
+Open3.BorderColor3 = Color3.new(0.635294, 0.635294, 0.635294)
+Open3.BorderSizePixel = 2
+Open3.Position = UDim2.new(0.587632596, 0, 0.924945593, 0)
+Open3.Size = UDim2.new(0.0633967221, 0, 0.0388915539, 0)
+Open3.Font = Enum.Font.SourceSans
+Open3.Text = "Tele"
+Open3.TextColor3 = Color3.new(0.941177, 0.941177, 0.941177)
+Open3.TextScaled = true
+Open3.TextSize = 14
+Open3.TextWrapped = true
+
+Txt.Name = "Txt"
+Txt.Parent = FEG
+Txt.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Txt.BackgroundTransparency = 0.69999998807907
+Txt.BorderColor3 = Color3.new(0, 0, 0)
+Txt.Position = UDim2.new(0.864435136, 0, 0.314417183, 0)
+Txt.Size = UDim2.new(0.135137036, 0, 0.0282401722, 0)
+Txt.AutoButtonColor = false
+Txt.Font = Enum.Font.SourceSans
+Txt.Text = "Block data"
+Txt.TextColor3 = Color3.new(1, 1, 1)
+Txt.TextScaled = true
+Txt.TextSize = 14
+Txt.TextWrapped = true
+
+Coll.Name = "Coll"
+Coll.Parent = FEG
+Coll.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Coll.BackgroundTransparency = 1
+Coll.BorderColor3 = Color3.new(0, 0, 0)
+Coll.Position = UDim2.new(0.863598347, 0, 0.343558311, 0)
+Coll.Size = UDim2.new(0.135137036, 0, 0.0317755789, 0)
+Coll.AutoButtonColor = false
+Coll.Font = Enum.Font.SourceSans
+Coll.Text = "Collide = false"
+Coll.TextColor3 = Color3.new(0.941177, 0, 0)
+Coll.TextScaled = true
+Coll.TextSize = 14
+Coll.TextStrokeTransparency = 0.69999998807907
+Coll.TextWrapped = true
+
+Anch.Name = "Anch"
+Anch.Parent = FEG
+Anch.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Anch.BackgroundTransparency = 1
+Anch.BorderColor3 = Color3.new(0, 0, 0)
+Anch.Position = UDim2.new(0.863598347, 0, 0.374233127, 0)
+Anch.Size = UDim2.new(0.135137036, 0, 0.0351155698, 0)
+Anch.AutoButtonColor = false
+Anch.Font = Enum.Font.SourceSans
+Anch.Text = "Anchored = true"
+Anch.TextColor3 = Color3.new(0.941177, 0, 0)
+Anch.TextScaled = true
+Anch.TextSize = 14
+Anch.TextStrokeTransparency = 0.69999998807907
+Anch.TextWrapped = true
+
+Cl.Name = "Cl"
+Cl.Parent = FEG
+Cl.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+Cl.BackgroundTransparency = 1
+Cl.BorderColor3 = Color3.new(0, 0, 0)
+Cl.Position = UDim2.new(0.863598347, 0, 0.407975465, 0)
+Cl.Size = UDim2.new(0.135137036, 0, 0.0351155698, 0)
+Cl.AutoButtonColor = false
+Cl.Font = Enum.Font.SourceSans
+Cl.Text = "Color"
+Cl.TextColor3 = Color3.new(0.941177, 0.941177, 0.941177)
+Cl.TextScaled = true
+Cl.TextSize = 14
+Cl.TextStrokeTransparency = 0.69999998807907
+Cl.TextWrapped = true
+
+MT.Name = "MT"
+MT.Parent = FEG
+MT.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+MT.BackgroundTransparency = 1
+MT.BorderColor3 = Color3.new(0, 0, 0)
+MT.Position = UDim2.new(0.863598347, 0, 0.441717803, 0)
+MT.Size = UDim2.new(0.135137036, 0, 0.0351155698, 0)
+MT.AutoButtonColor = false
+MT.Font = Enum.Font.SourceSans
+MT.Text = "Name"
+MT.TextColor3 = Color3.new(0.729412, 0.729412, 0.729412)
+MT.TextScaled = true
+MT.TextSize = 14
+MT.TextStrokeTransparency = 0.69999998807907
+MT.TextWrapped = true
+-- Scripts:
+-- Open
+Open.MouseButton1Click:Connect(function()
+	if Open4 == false then
+		Fr1:TweenPosition(UDim2.new(0,0,0.331,0),"In","Linear",0.3,true)
+		Open4 = true
+	else
+		Open4 = false
+		Fr1:TweenPosition(UDim2.new(-0.3,0,0.331,0),"In","Linear",0.3,true)
+	end
+end)
+Open2.MouseButton1Click:Connect(function()
+	if Open5 == false then
+		FR2:TweenPosition(UDim2.new(0,0,0.689,0),"In","Linear",0.3,true)
+		Open5 = true
+	else
+		Open5 = false
+		FR2:TweenPosition(UDim2.new(-0.3,0,0.689,0),"In","Linear",0.3,true)
+	end
+end)
+Open3.MouseButton1Click:Connect(function()
+	if Open6 == false then
+		FR3:TweenPosition(UDim2.new(0.729,0,0.689,0),"In","Linear",0.3,true)
+		Open6 = true
+	else
+		Open6 = false
+		FR3:TweenPosition(UDim2.new(1,0,0.689,0),"In","Linear",0.3,true)
+	end
+end)
+
+
+-- Buttons
+SW.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WP.Text
+end)
+SWJ.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = JP.Text
+end)
+T.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(X.Text,Y.Text,Z.Text)
+end)
+Save1.MouseButton1Click:Connect(function()
+	local X = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X
+	local Y = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y
+	local Z = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z
+	TextLabel.Text = "X:"..(math.floor(X/1)/1).." Z:"..(math.floor(Z/1)/1).." Y:"..(math.floor(Y/1)/1)
+	X1 = X
+	Y1 = Y
+	Z1 = Z
+end)
+Save2.MouseButton1Click:Connect(function()
+	local X = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X
+	local Y = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y
+	local Z = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z
+	TextLabel_2.Text = "X:"..(math.floor(X/1)/1).." Z:"..(math.floor(Z/1)/1).." Y:"..(math.floor(Y/1)/1)
+	X2 = X
+	Y2 = Y
+	Z2 = Z
+end)
+Save3.MouseButton1Click:Connect(function()
+	local X = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X
+	local Y = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y
+	local Z = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z
+	TextLabel_3.Text = "X:"..(math.floor(X/1)/1).." Z:"..(math.floor(Z/1)/1).." Y:"..(math.floor(Y/1)/1)
+	X3 = X
+	Y3 = Y
+	Z3 = Z
+end)
+Load1.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(X1,Y1,Z1)
+end)
+Load2.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(X2,Y2,Z2)
+end)
+Load3.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(X3,Y3,Z3)
+end)
+TeleP.MouseButton1Click:Connect(function()
+	local N = PartN.Text
+	local Y = PosY.Text
+	print(PartN.Text)
+	if PosY.Text == "" then
+		Y = 3
+	end
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		if v.Name == PartN.Text then
+			if v.ClassName == "Part" then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0,Y,0)
+			end
+		end
+		for i,v2 in pairs(v:GetChildren()) do
+			if v2.Name == PartN.Text then
+				if v.ClassName == "Part" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v2.CFrame + Vector3.new(0,Y,0)
+				end
+			end
+		end
+	end
+end)
+UpY1.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,150,0)
+end)
+UpY2.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,1000,0)
+end)
+UpY3.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,5000,0)
+end)
+InfJ.MouseButton1Click:Connect(function()
+	if InfiniteJumpEnabled == false then
+	InfiniteJumpEnabled = true
+	else
+		InfiniteJumpEnabled = false
+		end
+end)
+RL.MouseButton1Click:Connect(function()
+	if Del == false then
+		Del = true
+	else
+		Del = false
+	end
+end)
+Die.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+Inv.MouseButton1Click:Connect(function()
+	local V = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector*Val1.Text
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + V
+end)
+Si.MouseButton1Click:Connect(function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,InvN.Text,0)
+end)
+TP.MouseButton1Click:Connect(function()
+	local Plr = Plr1.Text
+	local V = game.Workspace[Plr].HumanoidRootPart.CFrame.lookVector*Val1.Text
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace[Plr].HumanoidRootPart.CFrame + V
+end)
+TPS.MouseButton1Click:Connect(function()
+	for i = 1,10,1 do
+	local Plr = Plr1.Text
+	local V = game.Workspace[Plr].HumanoidRootPart.CFrame.lookVector*Val1.Text
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace[Plr].HumanoidRootPart.CFrame + V
+	wait(0.25)
+	end
+end)
+TPA.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if v.Name ~= game.Players.LocalPlayer.Name then
+	local Plr = v.Name
+	local V = game.Workspace[Plr].HumanoidRootPart.CFrame.lookVector*Val1.Text
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace[Plr].HumanoidRootPart.CFrame + V
+	wait(0.7)
+	end
+	wait()
+	end
+end)
+TPY.MouseButton1Click:Connect(function()
+	local S = DIS2.Text
+	local V = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector*S
+	game.Workspace[Plr2.Text].HumanoidRootPart.Anchored = true
+	game.Workspace[Plr2.Text].HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + V
+	
+end)
+TPAY.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if v.Name ~= game.Players.LocalPlayer.Name then
+			local S = DIS2.Text
+	local V = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector*S
+	game.Workspace[v.Name].HumanoidRootPart.Anchored = true
+	game.Workspace[v.Name].HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + V
+		end
+		end
+end)
+BH.MouseButton1Click:Connect(function()
+	if C == false then
+		C = true
+	else
+		C = false
+	end
+end)
+-- Keys 
+	mouse.KeyDown:connect(function(key)
+	    if key == "t" then
+             if Val1.Text =="" then
+              local V = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector*15
+	       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + V
+               else
+              local V = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector*Val1.Text
+	       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + V
+            end
+	    end
+	end)
+	mouse.KeyDown:connect(function(key)
+	    if key == "y" then
+              if InvN.Text == "" then
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,15,0)
+            else
+	       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,InvN.Text,0)
+            end
+	    end
+	end)
+	mouse.KeyDown:connect(function(key)
+	    if key == "j" then
+	   	if InfiniteJumpEnabled == false then
+	InfiniteJumpEnabled = true
+	else
+		InfiniteJumpEnabled = false
+		end
+	    end
+	end)
+
+GR.MouseButton1Click:Connect(function()
+	game.Workspace.Gravity = GRS.Text
+end)
+-- Themes 
+local Red1 = Color3.new(199/255,0/255,0/255)
+local Red2 = Color3.new(255/255,15/255,15/155)
+local Org1 = Color3.new(230/255,107/255,0/255)
+local Org2 = Color3.new(255/255,170/255,0/155)
+local Ye1 = Color3.new(255/255,213/255,0/255)
+local Ye2 = Color3.new(245/255,255/255,124/255)
+local Gr1 = Color3.new(21/255,129/255,0/255)
+local Gr2 = Color3.new(31/255,206/255,0/255)
+local Bl1 = Color3.new(0/255,17/255,255/255)
+local Bl2 = Color3.new(0/255,157/255,255/255)
+local Pl1 = Color3.new(162/255,2/255,255/255)
+local Pl2 = Color3.new(238/255,0/255,255/255)
+local Pi1 = Color3.new(226/255,0/255,255/255) 
+local Pi2 = Color3.new(250/255,88/255,255/255) 
+local W1 = Color3.new(185/255,185/255,185/255) 
+local W2 = Color3.new(255/255,255/255,255/255) 
+local Black1 = Color3.new(45/255,45/255,45/255) 
+local Black2 = Color3.new(85/255,85/255,85/255) 
+T1.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Red1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Red1
+		else
+			v.BorderColor3 = Red2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Red1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Red1
+		else
+			v.BorderColor3 = Red2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Red1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Red1
+		else
+			v.BorderColor3 = Red2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+
+T2.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Org1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Org1
+		else
+			v.BorderColor3 = Org2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Org1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Org1
+		else
+			v.BorderColor3 = Org2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Org1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Org1
+		else
+			v.BorderColor3 = Org2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+T3.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Ye1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Ye1
+		else
+			v.BorderColor3 = Ye2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Ye1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Ye1
+		else
+			v.BorderColor3 = Ye2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Ye1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Ye1
+		else
+			v.BorderColor3 = Ye2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+T4.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Gr1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Gr1
+		else
+			v.BorderColor3 = Gr2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Gr1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Gr1
+		else
+			v.BorderColor3 = Gr2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Gr1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Gr1
+		else
+			v.BorderColor3 = Gr2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+T5.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Bl1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Bl1
+		else
+			v.BorderColor3 = Bl2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Bl1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Bl1
+		else
+			v.BorderColor3 = Bl2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Bl1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Bl1
+		else
+			v.BorderColor3 = Bl2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+T6.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pl1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Pl1
+		else
+			v.BorderColor3 = Pl2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pl1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Pl1
+		else
+			v.BorderColor3 = Pl2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pl1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Pl1
+		else
+			v.BorderColor3 = Pl2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+
+T7.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pi1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Pi1
+		else
+			v.BorderColor3 = Pi2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pi1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Pi1
+		else
+			v.BorderColor3 = Pl2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pi1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Pi1
+		else
+			v.BorderColor3 = Pi2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+T8.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = W1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = W1
+		else
+			v.BorderColor3 = W2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Pi1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = W1
+		else
+			v.BorderColor3 = W2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = W1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = W1
+		else
+			v.BorderColor3 = W2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+
+T9.MouseButton1Click:Connect(function()
+	for i,v in pairs(FR2:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Black1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Black1
+		else
+			v.BorderColor3 = Black2
+		end
+	end
+	for i,v in pairs(FR3:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Black1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Black1
+		else
+			v.BorderColor3 = Black2
+		end
+	end
+	for i,v in pairs(Fr1:GetChildren()) do
+		if v.ClassName == "Frame" then
+			v.BackgroundColor3 = Black1
+		elseif v.ClassName == "TextButton" then
+			v.BorderColor3 = Black1
+		else
+			v.BorderColor3 = Black2
+		end
+	end
+	C6.BackgroundColor3 = Color3.new(29/255,29/255,29/255)
+end)
+while true do
+	if mouse.Target ~= nil then
+		if mouse.Target.ClassName == "Part" then
+		Selection.Adornee = mouse.Target
+		if Selection.Adornee.CanCollide == false then
+			Coll.TextColor3 = Color3.new(255/255,0/255,0/255)
+			Coll.Text = "Collide=False"
+		else
+			Coll.TextColor3 = Color3.new(0/255,255/255,0/255)
+			Coll.Text = "Collide=True"
+		end
+		if Selection.Adornee.Anchored == false then
+			Anch.TextColor3 = Color3.new(255/255,0/255,0/255)
+			Anch.Text = "Anchored=False"
+		else
+			Anch.TextColor3 = Color3.new(0/255,255/255,0/255)
+			Anch.Text = "Anchored=True"
+		end
+		Cl.TextColor3 = Selection.Adornee.Color
+		MT.Text = Selection.Adornee.Name
+		end
+	else
+		Coll.TextColor3 = Color3.new(0/255,0/255,255/255)
+		Coll.Text = "SkyBox"
+		Anch.TextColor3 = Color3.new(0/255,0/255,255/255)
+		Anch.Text = "SkyBox"
+		Cl.TextColor3 = Color3.new(255/255,255/255,255/255)
+		MT.Text = "NoSelection!"
+	end
+	wait(.1)
+end
